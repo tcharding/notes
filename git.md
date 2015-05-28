@@ -1,9 +1,6 @@
 github.com
 ----------
-
 * ssh -T git@github.com  # authenticate
-* git clone https://github.com/repo-name 
-* git config user.name "taivas1080" 
 * git remote set-url origin git@github.com:user/repo-name
 * git remote add upstream git://github.com/FORK/foo
 
