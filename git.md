@@ -1,7 +1,7 @@
 github.com
 ----------
 * ssh -T git@github.com  # authenticate
-* git remote set-url origin git@github.com:user/repo-name
+* git remote set-url origin git@github.com:tcharding/repo
 * git remote add upstream git://github.com/FORK/foo
 
 general usage
@@ -10,6 +10,11 @@ general usage
 * git branch -d <branch>		 # delete branch
 * git push origin --delete <branch_name> # delete remote branch
 * git pu # sync with upstream
+
+* remove all deleted
+git rm $(git ls-files --deleted)
+
+* git reset --hard 0d1d7fc32
 
 work flow
 ---------
