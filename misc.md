@@ -1,6 +1,10 @@
 Miscellaneous notes
 ===================
 
+move block left/right in python mode
+C-c <
+C-c >
+
 `file`: determine file type
 `uniq`: only unique lines
 

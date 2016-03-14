@@ -11,6 +11,10 @@ Github.com
 # sync fork with upstream
 `git pu`
 
+# delete branch
+`git branch -d branch_name` # -D for --force
+`git push origin --delete branch_name`
+
 Github: work flow for forked projects
 ------------------------------------
 1. `git checkout master`
