@@ -1,5 +1,18 @@
+git
+===
+
+Misc
+----
+git rerere <!-- makes a note of merge changes -->
+
+git log -- [filename]
+
+git show -s commit
+
 Github.com
 ----------
+
+
 `ssh -T git@github.com` <!-- authenticate with http://github.com -->  
 
 # set remote url so we can use ssh keys

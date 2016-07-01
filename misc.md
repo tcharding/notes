@@ -1,6 +1,12 @@
 Miscellaneous notes
 ===================
 
+echo -e "\xE2\x98\xA0" <!-- skull and crossbones -->
+
+find -type f -iname "Makefile" -exec grep -H "KERNEL" {} \; 
+
+gpg --search-keys who@address.com
+
 move block left/right in python mode
 C-c <
 C-c >

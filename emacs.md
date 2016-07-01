@@ -1,3 +1,33 @@
+Emacs notes and tricks
+======================
+
+* set goal column to set position for C-n/C-p to jump to
+C-x C-n set-goal-column
+
+C-x h mark buffer
+C-c C-r send marked region to scheme interpreter
+C-x C-e send previous sexpr to scheme interpreter
+C-l C-r load file
+
+M-x set-variable ENTER fill-column
+M-x align <!-- align equal signs -->
+
+bookmarks
+---------
+C-x r m   set bookmark
+C-x r b   jump to bookmark
+C-x r l   list bookmarks
+
+registers
+---------
+https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html
+C-x r SPACE r  save current position to register r
+C-x r j r  jump to position saved in register r
+
+
+From O'Riely Book
+=================
+
 miscellaneous
 -------------
 set mode per file
