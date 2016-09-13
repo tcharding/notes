@@ -1,6 +1,8 @@
 Emacs notes and tricks
 ======================
 
+M-q - fill current paragraph
+
 * set goal column to set position for C-n/C-p to jump to
 C-x C-n set-goal-column
 
