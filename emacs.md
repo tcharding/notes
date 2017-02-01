@@ -1,6 +1,10 @@
 Emacs notes and tricks
 ======================
 
+M-x align-regex =
+
+M-; [un]comment-region
+
 M-q - fill current paragraph
 
 * set goal column to set position for C-n/C-p to jump to

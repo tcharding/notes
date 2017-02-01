@@ -6,6 +6,9 @@ One liners
 * change all occurrences in file of foo to bar
 perl -pi -e 's/foo/bar/g' file
 
+* remove lines containing 'lunch'
+perl -n -i -e 'print unless /lunch/' May.md
+
 Building Distribution 
 ---------------------
 Build new skeleton with

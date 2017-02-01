@@ -64,6 +64,26 @@ Porcelain Commands
 `git config -l`
 
 
-Plumbing Commands 
------------------
+# Pro Git
 
+### chapter 2
+
+git status -s <!-- short -->
+
+git diff <!-- changed but not staged -->
+
+git diff --staged <!-- staged changes for next commit -->
+git diff --cached <!-- synonym for --staged -->
+
+git commit -a -m "blah" <!-- stage all changes and commit -->
+
+git rm <file>           <!-- remove and stage for deletion -->
+git rm --cached <file>  <!-- stop tracking file but keep local copy -->
+
+git log -p -2 <!-- show diff between commits -->
+git log --stat
+git log --pretty=oneline
+git log --since=2.weeks
+
+git remote -v
+git remote show origin <!-- show state of origin -->

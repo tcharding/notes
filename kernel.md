@@ -36,7 +36,6 @@ yourself. But if I had to give you advice on locking: keep it simple.
 * 
 
 
-
 Source code
 -----------
 # Greg KH's tree
@@ -66,13 +65,19 @@ the variable
 and so on.  NEVER use 'int' or 'long' crossing that boundry, it's not
 going to work properly.
 
-Creating patches
-----------------
+Patches
+-------
+
+* Who to send patch to
+$ scripts/get_maintainer.pl mm/memory.c
+
+* Patch from last commit (add extra ~ for more commits)
+$ git format-patch HEAD~ 
+
 _remember to check commit format, use `lfile <file>`_
 
-* git format-patch -s -X -o /home/tobin/scratch/outgoing --cover-letter <!-- set X -->
-* edit patches
-* 
+* Patch set
+$ git format-patch -s -X -o /home/tobin/scratch/outgoing --cover-letter <!-- set X -->
 
 
 Development Tools
@@ -114,3 +119,38 @@ review some patches
 
 Reading List
 ------------
+Linux Kernel Build
+==================
+
+* which tree
+`$ cd $KERNEL_TREE`
+
+* clean
+`$ make mrproper`
+
+* get runnin config file
+`$ cp /boot/config-blah .config`
+
+* update config
+`$ make nconfig`
+
+* build
+`$ make -j8 EXTRA-CFLAGS=-W` <!-- get extra compiler warnings -->
+
+* make modules and run Ubuntu install script
+`# make modules_install install`
+
+* build emacs TAGS file
+`# make TAGS`
+
+Qemu
+====
+
+https://www.collabora.com/news-and-blog/blog/2017/01/16/setting-up-qemu-kvm-for-kernel-development/
+
+mount image using chroot to make changes (file system is read only
+when booted with qemu)
+https://help.ubuntu.com/community/Installation/FromLinux
+
+root password: pass
+

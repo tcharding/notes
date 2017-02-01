@@ -1,6 +1,14 @@
 BASH notes 
 ==========
 
+### read line
+
+while read -r line || [[ -n "$line" ]]; do
+    echo "$line"
+done
+
+
+
 ** use on top of all scripts **
 set -o nounset
 

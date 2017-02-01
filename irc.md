@@ -1,20 +1,14 @@
-IRC notes 
+1;2802;0cIRC notes 
 =========
 
- irssi
- /set nick tcharding
- /set real_name Tobin Harding
- /connect irc.freenode.net 8001
- /join #channel_of_your_choice
- /leave 'put witty goodbye message here'
-
- /msg acooks hello
+## weechat
+/server add freenode chat.freenode.net
+/connect freenode
+/join #go-nuts
+/filter add joinquit * irc_join,irc_part,irc_quit *
 
 
- /ignore #xkcd-signal MODES JOINS PARTS QUITS
- 
- /ignore -except -pattern yourNick #xkcd-signal - ?
 
- /msg nickserv info
+/msg acooks hello
 
 
