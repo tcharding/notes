@@ -6,7 +6,7 @@ LOG=~/log/
 
 Miscellaneous
 -------------
-~/.whitelist
+~/.mutt/whitelist
 
 default mailbox is IN-catchall
 white listed email goes into IN-inbox
@@ -32,7 +32,12 @@ mutt -H /tmp/0001-<whatever your filename is> <!-- send patch -->
 
 Esc P   <!-- Decrypt message -->
 
-mutt -R <!-- lauch mutt read only -->
+mutt -R <!-- launch mutt read only -->
+
+* send patch
+mutt -H 0001-mm-Fix-sparse-use-plain-integer-as-NULL-pointer.patch  -s 'test subject' -c 'th@tobin.cc, tb@tobin.cc' me@tobin.cc
+
+
 
 abook
 -----

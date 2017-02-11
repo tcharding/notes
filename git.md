@@ -9,6 +9,8 @@ git log -- [filename]
 
 git show -s commit
 
+git send-email --to addr *.patch
+
 Github.com
 ----------
 
